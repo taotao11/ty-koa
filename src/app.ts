@@ -14,11 +14,13 @@ loadDecoratorRouter({
   extension: ".ts"
 });
 console.log(path.join(__dirname, "controller"));
+//参数处理
+var bodyParser = require('koa-bodyparser');
 router.get("/heartbeats", async (ctx, _) => {
   ctx.body = "success";
 });
 
-app.use(router.routes()).use(router.allowedMethods());
+app.use(bodyParser()).use(router.routes()).use(router.allowedMethods());
 
 // 2.app.use 使用已配置的路由
 app.use(KoaDecoratorRouter.routes()).use(KoaDecoratorRouter.allowedMethods());
