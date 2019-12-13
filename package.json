@@ -1,7 +1,6 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,16 +10,26 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/koa": "^2.11.0",
-    "@types/koa-router": "^7.0.42",
     "koa": "^2.11.0",
+    "koa-bodyparser": "^2.5.0",
     "koa-decorators-router": "^0.1.0",
     "koa-router": "^7.4.0",
     "koa-router-decorator-plugin": "0.0.5"
   },
   "devDependencies": {
+    "@types/koa": "^2.11.0",
+    "@types/koa-router": "^7.0.42",
     "nodemon": "^2.0.1",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taotao11/ty-koa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taotao11/ty-koa/issues"
+  },
+  "homepage": "https://github.com/taotao11/ty-koa#readme",
+  "description": ""
 }
